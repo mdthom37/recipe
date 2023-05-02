@@ -1,0 +1,579 @@
+@import url('https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400');
+
+html {
+    background-color: rgba(122, 191, 191, .5);
+    margin: auto;
+}
+
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+main {
+    display: grid;  
+}
+
+h1 {
+    font-family: 'Bebas Neue';
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+    background-color: #F2F2F2;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'Bebas Neue';  
+    font-size: 30px;  
+}
+
+h3 {
+    font-family: 'Bebas Neue'; 
+    font-size: 25px;   
+}
+
+
+
+p {
+    font-family: 'Montserrat';
+}
+
+.navMenu {
+    font-family: 'Bebas Neue';
+    order: -1;
+    width: 1280px;
+}
+
+nav {
+    display: inline;
+    font-family: 'Bebas Neue';
+    grid-row: 1 / 2;
+    position: relative;
+    width: 100%;
+    box-shadow: 1px 5px 4px 0 rgba(0,0,0,.1);
+    background-color: #F2F2F2;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 175px;
+    padding-right: 175px;
+    background-color: #F2F2F2;
+    margin: 0;
+    
+}
+
+nav li {
+    display: inline;
+    margin: auto 20px auto 20px;
+    max-width: 100%;
+    font-size: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #EB5428;
+}
+
+nav .menu-btn {
+    display: none;
+}
+
+nav .menu-icon {
+    display: none;
+}
+
+#homeNav {
+    position: absolute;
+    top: 15px;
+    left: 165px;
+    background-color: #EB5428;
+    justify-content: center;
+}
+
+#logo-icon {
+    height: 50px;
+    background-color: #EB5428;
+    padding: 15px;
+    left: 0;
+}
+
+#homeNav {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+#avatarNav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #0D0D0D;
+}
+
+nav li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+nav li a img {
+    height: 50px;
+    width: 50px;
+}
+
+form {
+    padding-top: 20px;
+    background-color: #F2F2F2;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.search input {
+    height: 40px;
+    width: 280px;
+    box-sizing: border-box;
+    border: 2px solid #EB5428;
+}
+
+.search button {
+    background-color: #EB5428;
+    border: none;
+}
+
+.recipeDescription {
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F2;
+    max-width: 1280px;
+}
+
+.recipeDescription img {
+    width: 38%;
+}
+
+.recipeDescription p {
+    margin: 10px;
+}
+
+.recipeDescription menu {
+    background-color: white;
+    border: 2px solid #EB5428;
+    margin: 0;
+    padding: 30px;
+}
+
+.recipeDescription menu li {
+    list-style: none;
+    color: #EB5428;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    padding: 20px;
+}
+
+.recipeDescription menu a {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #EB5428;
+}
+
+.detailsHeader {
+    background-color: #0D0D0D;
+    display: grid;
+    grid-template-rows: 1fr;
+    max-width: 1280px;
+}
+
+.detailsHeader h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    text-align: center;
+    color: #7ABFBF;
+}
+
+#descriptorsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.detailDescriptors {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.detailDescriptors dt{
+    color: #7ABFBF;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.detailDescriptors dd{
+    margin: 0;
+    color: #7ABFBF;
+    font-family: 'Montserrat';
+}
+
+#recipeInstructions {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+#recipeInstructions h2 {
+    text-align: center;
+    color: #0D0D0D;
+}
+
+#recipeInstructions ul {
+    width: 200px;
+    margin-bottom: 0; 
+}
+
+#recipeInstructions li {
+    font-family: 'Montserrat';
+}
+
+.sideDishes {
+    background-color: #7ABFBF;
+    max-width: 1280px;
+}
+
+.sideDishes h2 {
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+    padding-top: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.column1 {
+    width: 25%;
+}
+
+.column2 {
+    width: 25%;
+}
+
+.column3 {
+    width: 25%;
+}
+
+.column4 {
+    width: 25%;
+}
+
+.otherRecipes {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.otherRecipes img {
+    order: -1;
+    margin-bottom: 10px;
+}
+
+.otherRecipes h3 {
+    margin: 0;
+}
+
+.otherRecipes p {
+    margin: 5px 0px 5px 0px;
+}
+
+footer {
+    background-color: white;
+    font-family: 'Bebas Neue';
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#social menu {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+}
+
+#social li {
+    font-family: 'Bebas Neue';
+    display: inline;
+    margin: auto 50px auto 55px;
+    list-style: none;
+    text-align: center;
+}
+
+#social a {
+    text-decoration: none;
+    color: #EB5428;
+}
+
+#theChef {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-left: 10px;
+}
+
+#theChef p {
+    font-family: 'Bebas Neue';
+    text-align: center;
+    margin-left: 10px;
+}
+
+#theChef img {
+    width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        max-width: 768px;
+    }
+
+    .recipeDescription {
+        flex-direction: column;
+    }
+    
+    .recipeDescription menu {
+        display: flex;
+        flex-direction: row;
+        border: none;
+        padding: 0px 10px 0px 10px;
+        width: 100%;
+        align-self: center;
+        justify-content: space-around;
+        background-color: rgba(255,255,255,.7 );
+        position: absolute;
+    }
+
+    .recipeDescription menu li {
+        padding: 0;
+    }
+
+    .recipeDescription li {
+        display: inline;
+        margin: auto 30px auto 30px;
+    }
+
+    .recipeDescription img {
+        width: 100%;
+    }
+
+    #descriptorsContainer {
+        flex-direction: column;
+        text-align: left;
+        background-color: #F2F2F2;
+    }
+
+    .detailsHeader h2 {
+        background-color: #F2F2F2;
+        color: #0D0D0D;
+    }
+
+    .detailDescriptors dt {
+        color: #0D0D0D;
+    }
+
+    .detailDescriptors dd {
+        color: #0D0D0D;
+    }    
+
+    #recipeInstructions {
+        background-color: #F2F2F2;
+    }
+
+    .column1 {
+        width: 50%;
+    }
+    
+    .column2 {
+        width: 50%;
+    }
+
+    .column3 {
+        width: 0%;
+    }
+    
+    .column4 {
+        width: 0%;
+    }
+
+    .navMenu nav ul {
+        padding: 130px 0px 10px 0px;
+    }
+
+    .navMenu nav li {
+        margin: 0px;
+    }
+
+    .search {
+        position: absolute;
+        top: 15px;
+        right: 130px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+    section {
+        max-width: 414px;
+    }
+
+    #avatarNav {
+        margin-right: 10px;
+    }
+
+    nav .menu-icon {
+        display: inline-block;
+        position: absolute;
+    }
+
+    .detailsHeader {
+        background-color: #F2F2F2;
+    }
+
+    .detailsHeader h2 {
+        color: #0D0D0D;
+    }
+
+    .detailDescriptors {
+        flex-direction: column;
+    }
+
+    .detailDescriptors dt {
+        color: #0D0D0D;
+    }
+
+    .detailDescriptors dd {
+        color: #0D0D0D;
+    }    
+
+    #recipeInstructions {
+        flex-direction: column;
+        background-color: #F2F2F2;
+    }
+    
+    .otherRecipes {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .otherRecipes img {
+        width: 25%;
+    }
+
+    nav ul {
+        padding-top: 90px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding-bottom: 0;
+        background-color: #F2F2F2;
+    }
+
+    #social {
+        background-color: white;
+    }
+
+    #social menu {
+        padding: 30px 0px 0px 0px;
+    }
+
+    #social ul {
+        padding: 0;
+    }
+
+    #social li {
+        padding: 0;
+        margin: auto 10px auto 8%;
+    }
+
+    #descriptorsContainer {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    #theChef {
+        flex-direction: column-reverse;
+        align-items: center;
+        background-color: white;
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    #theChef p {
+        margin-bottom: 0;
+    }
+
+    #theChef img {
+        width: 50%;
+    }
+
+    .recipeDescription img {
+        width: 100%;
+    }
+    
+    .recipeDescription menu {
+        display: flex;
+        flex-direction: row;
+        border: none;
+        padding: 0;
+        max-width: 414px;
+    }
+
+    .recipeDescription menu li {
+        padding: 0;
+    }
+
+    nav .menu-icon {
+        cursor: pointer;
+        padding: 10px 10px;
+        position: absolute;
+        user-select: none;
+        background-color: #F2F2F2;
+        text-align: center;
+        top: 20px;
+    }
+
+    #homeNav {
+        left: 140px;
+    }
+
+    .search {
+        position: relative;
+        top: 0px;
+        right: 0px;
+    }
+}
